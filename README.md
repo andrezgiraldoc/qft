@@ -30,7 +30,7 @@ clang++ -std=c++11 main.cpp -o main
 In the main.cpp file, the object of the QRegister class is instantiated, which contains the initial states of each of the qubits that are part of the quantum register.
 
 For example:
-> QRegister qreg ({{1,0}, {0,1}, {1 / sqrt (2), 1 / sqrt (2)}, {1 / sqrt (2), -1 / sqrt (2)}, { 1 / sqrt (2), {0,1 / sqrt (2)}}});
+> QRegister qreg ({{0,1}, {1,0}, {1 / sqrt (2), 1 / sqrt (2)}, {1 / sqrt (2), -1 / sqrt (2)}, { 1 / sqrt (2), {0,1 / sqrt (2)}}});
 
 Corresponds to a circuit with the following initial states:
 
@@ -38,6 +38,6 @@ Corresponds to a circuit with the following initial states:
 
 The function getStateVector() returns the resulting state vector that is obtained from the tensor product between the initial states of the circuit or application of the quantum gates, for this specific case, after applying the gate QFT.
 
-This resulting vector is similar to the matrix of final amplitudes obtained in the [Quirk simulator]([https://algassert.com/quirk](https://algassert.com/quirk)) with which the results of the execution can be compared.
+This resulting vector is similar to the matrix of final amplitudes obtained in the [Quirk simulator](https://algassert.com/quirk) with which the results of the execution can be compared.
 
 The applyQFT () function is the function applied by the respective matrix associated with the Fourier Quantum Transform on the number of qubits initially defined in the quantum register.
