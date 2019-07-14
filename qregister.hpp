@@ -4,6 +4,7 @@
 #include <vector>
 #include <complex>
 #include <map>
+#include <bitset>
 
 using namespace std;
 
