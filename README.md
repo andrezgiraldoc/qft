@@ -21,7 +21,7 @@ clang++ -std=c++11 main.cpp -o main
 
 ```
 
->  **Note:** This project uses C ++ 11 and it was successfully tested on a macOS Mojave (for other OS g++ can be used )
+>  **Notes:** This project uses C ++ 11 and it was successfully tested on a macOS Mojave (for other OS g++ can be used ). There is a variable called MAX_QUBITS that must be modified by the maximum number of qubits that allows the machine in which the algorithm is running
 
   
 

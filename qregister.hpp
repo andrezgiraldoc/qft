@@ -104,7 +104,7 @@ void QRegister::applyQFT() {
 }
 
 vector <complex<double> > QRegister::tensorProduct(vector<Qubit> initialStatesMatrix) {
-  const int MAX_QUBITS = 20;
+  const int MAX_QUBITS = 50;
   int n=initialStatesMatrix.size();
   complex<double> val;
   vector <complex<double> > finalStatesVector;
